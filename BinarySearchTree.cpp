@@ -36,3 +36,6 @@ public:
 
         //step 1: Allocate memory for new node
         Node* newNode = new Node(); // Membuat node baru
+
+        //step 2: Assign value to the data field of the new node
+        newNode->info = x; // Menetapkan nilai yang dimasukkan ke dalam node baru

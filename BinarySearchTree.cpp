@@ -110,3 +110,21 @@ public:
         cout << ptr->info << " "; // Tampilkan nilai node saat ini
         inorder(ptr->rightchild); // Kunjungi subtree kanan
     }
+
+    void preorder(Node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty." << endl; // Jika pohon kosong, tampilkan pesan
+            return; // Keluar dari fungsi
+        }
+
+        if (ptr == nullptr) // Jika pointer tidak null
+            return;
+
+
+        cout << ptr->info << " "; // Tampilkan nilai node saat ini
+        preorder(ptr->leftchild); // Kunjungi subtree kiri
+        preorder(ptr->rightchild); // Kunjungi subtree kanan
+    }
+

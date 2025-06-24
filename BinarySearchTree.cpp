@@ -151,3 +151,56 @@ public:
         return root == nullptr; 
     } 
 };
+
+// Main function to demonstrate the Binary Search Tree operations
+int main()
+{
+    BinarySearchTree elements;
+    while (true)
+    {
+        cout << "\nMenu" << endl;
+        cout << "1. Implement insert operation" << endl;
+        cout << "2. Perform inorder traversal" << endl;
+        cout << "3. Perform preorder traversal" << endl;
+        cout << "4. Perform postorder traversal" << endl;
+        cout << "5. Exit" << endl;
+        cout << "\nEnter your choice (1-5) : ";
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        switch (ch)
+        {
+        case '1':
+        {
+            elements.insert();
+            break;
+        }
+        case '2':
+        {
+            elements.inorder(elements.root);
+            break;
+        }
+        case '3':
+        {
+
+            elements.preorder(elements.root);
+            break;
+        }
+        case '4':
+        {
+
+            elements.postorder(elements.root);
+            break;
+        }
+        case '5':
+            return 0;
+        default:
+        {
+            cout << "Invalid option" << endl;
+            break;
+        }
+        }
+    }
+};

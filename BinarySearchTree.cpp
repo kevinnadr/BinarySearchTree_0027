@@ -10,3 +10,9 @@ public:
 
     //constructor for Node class
     Node()                      
+    {
+        leftchild = nullptr;    // Inisialisasi anak kiri dengan nullptr (belum ada anak kiri)
+        rightchild = nullptr;   // Inisialisasi anak kanan dengan nullptr (belum ada anak kanan)
+    }
+};
+

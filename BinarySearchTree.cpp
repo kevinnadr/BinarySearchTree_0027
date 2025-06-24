@@ -128,3 +128,20 @@ public:
         preorder(ptr->rightchild); // Kunjungi subtree kanan
     }
 
+    void postorder(Node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty." << endl; // Jika pohon kosong, tampilkan pesan
+            return; // Keluar dari fungsi
+        }
+
+        if (ptr == nullptr) // Jika pointer tidak null
+            return;
+
+        postorder(ptr->leftchild); // Kunjungi subtree kiri
+        postorder(ptr->rightchild); // Kunjungi subtree kanan
+        cout << ptr->info << " "; // Tampilkan nilai node saat ini
+
+    }
+ 

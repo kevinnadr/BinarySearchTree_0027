@@ -43,3 +43,8 @@ public:
         //step 3: make the leftchild and rightchild of the new node point to nullptr
         newNode->leftchild = nullptr; // Anak kiri node baru diinisialisasi ke nullptr
         newNode->rightchild = nullptr; // Anak kanan node baru diinisialisasi ke nullptr
+
+        //step 4: locate the node which will be the parent of the new node
+        Node* parent = nullptr; // Inisialisasi parent sebagai nullptr
+        Node* currentNode = nullptr;
+        search(x, parent, currentNode); // Mencari posisi yang tepat untuk node baru

@@ -81,3 +81,15 @@ public:
         // Fungsi untuk mencari posisi yang tepat untuk node baru
         currentNode = root; // Mulai pencarian dari root
         parent = nullptr; // Inisialisasi parent sebagai nullptr
+
+        // Loop untuk mencari posisi yang tepat untuk node baru
+        while((currentNode != nullptr) && (currentNode->info != element)) 
+        {
+            parent = currentNode; // Set parent ke currentNode
+            if (element < currentNode->info) 
+                currentNode = currentNode->leftchild; // Pindah ke subtree kiri
+            else 
+                currentNode = currentNode->rightchild; // Pindah ke subtree kanan
+            
+        }
+    }

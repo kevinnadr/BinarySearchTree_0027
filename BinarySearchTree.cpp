@@ -27,3 +27,9 @@ public:
     {
         root = nullptr; //inisialisasi root dengan nullptr (pohon kosong)
     }
+
+   void insert()
+   {
+        int x;
+        cout << "Masukkan Nilai: ";
+        cin >> x; // Mengambil input nilai dari pengguna

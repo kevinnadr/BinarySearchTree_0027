@@ -93,3 +93,20 @@ public:
             
         }
     }
+
+    void inorder(Node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty." << endl; // Jika pohon kosong, tampilkan pesan
+            return; // Keluar dari fungsi
+        }
+
+        if (ptr == nullptr) // Jika pointer tidak null
+            return;
+
+
+        inorder(ptr->leftchild); // Kunjungi subtree kiri
+        cout << ptr->info << " "; // Tampilkan nilai node saat ini
+        inorder(ptr->rightchild); // Kunjungi subtree kanan
+    }

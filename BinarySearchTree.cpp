@@ -39,3 +39,7 @@ public:
 
         //step 2: Assign value to the data field of the new node
         newNode->info = x; // Menetapkan nilai yang dimasukkan ke dalam node baru
+
+        //step 3: make the leftchild and rightchild of the new node point to nullptr
+        newNode->leftchild = nullptr; // Anak kiri node baru diinisialisasi ke nullptr
+        newNode->rightchild = nullptr; // Anak kanan node baru diinisialisasi ke nullptr

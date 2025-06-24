@@ -33,3 +33,6 @@ public:
         int x;
         cout << "Masukkan Nilai: ";
         cin >> x; // Mengambil input nilai dari pengguna
+
+        //step 1: Allocate memory for new node
+        Node* newNode = new Node(); // Membuat node baru

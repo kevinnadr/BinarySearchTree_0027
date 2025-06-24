@@ -144,4 +144,10 @@ public:
         cout << ptr->info << " "; // Tampilkan nilai node saat ini
 
     }
- 
+    
+    bool isEmpty()
+    {
+        // check if the tree is empty
+        return root == nullptr; 
+    } 
+};

@@ -8,5 +8,5 @@ public:
     Node* leftchild;            // Pointer ke anak kiri (subtree kiri)
     Node* rightchild;           // Pointer ke anak kanan (subtree kanan)
 
-
-};
+    //constructor for Node class
+    Node()                      

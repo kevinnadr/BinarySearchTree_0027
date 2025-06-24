@@ -48,3 +48,12 @@ public:
         Node* parent = nullptr; // Inisialisasi parent sebagai nullptr
         Node* currentNode = nullptr;
         search(x, parent, currentNode); // Mencari posisi yang tepat untuk node baru
+
+        //step 5: if parent is nullptr, the tree is empty
+        if (parent == nullptr) 
+        {
+            root = newNode; // step 5a: Jika pohon kosong, node baru menjadi root
+
+            // step 5b: exit
+            return;
+        } 

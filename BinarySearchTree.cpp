@@ -18,3 +18,12 @@ public:
 
 
 class BinarySearchTree 
+{
+public:
+    Node* root;
+
+    //constructor for BinarySearchTree class
+    BinarySearchTree()
+    {
+        root = nullptr; //inisialisasi root dengan nullptr (pohon kosong)
+    }

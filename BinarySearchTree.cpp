@@ -77,4 +77,7 @@ public:
     }
 
     void search(int element, Node*& parent, Node*& currentNode) 
- 
+    {
+        // Fungsi untuk mencari posisi yang tepat untuk node baru
+        currentNode = root; // Mulai pencarian dari root
+        parent = nullptr; // Inisialisasi parent sebagai nullptr

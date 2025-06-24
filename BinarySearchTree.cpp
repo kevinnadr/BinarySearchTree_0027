@@ -66,4 +66,12 @@ public:
             // step 6b: exit
             return;
         } 
- 
+        //step 7: if the value of the new node is greater than or equal to the value of the parent node
+        else if (x >= parent->info)
+        {
+            parent->rightchild = newNode; // step 7a: Node baru menjadi anak kanan dari parent
+
+            // step 7b: exit
+            return;
+        }
+    }

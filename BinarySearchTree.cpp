@@ -57,3 +57,13 @@ public:
             // step 5b: exit
             return;
         } 
+
+        //step 6: if the value of the new node is less than the value of the parent node
+        if (x < parent->info) 
+        {
+            parent->leftchild = newNode; // step 6a: Node baru menjadi anak kiri dari parent
+
+            // step 6b: exit
+            return;
+        } 
+ 
